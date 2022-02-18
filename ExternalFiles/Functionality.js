@@ -1,7 +1,7 @@
 var baseURL = "https://voluntaddelacalle.github.io/";
 
 function switchPage(evt, pageName) {
-    if(pageName == index) {
+    if(pageName == "index") {
         location.replace(baseURL + pageName + ".html");
     }
     else {
