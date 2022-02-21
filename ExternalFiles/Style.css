@@ -66,8 +66,7 @@
 .project {
     background:rgb(0, 195, 255);
     position: absolute;
-    width: auto;
-    height: auto;
+    display: inline-block;
     text-align: center;
 }
 
