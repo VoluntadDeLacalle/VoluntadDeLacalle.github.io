@@ -1,0 +1,33 @@
+.asText {
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 2;
+}
+
+.popup {
+    position: absolute;
+        width: 50%;
+        height: 50%;
+        top: 25%;
+        left: 25%;
+        text-align: center;
+        background: rgb(49, 161, 77);
+}
+
+.Project1 {
+    cursor: pointer;
+    border-radius: 2%;
+}

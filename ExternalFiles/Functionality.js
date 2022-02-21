@@ -1,6 +1,6 @@
 var baseURL = "https://voluntaddelacalle.github.io/";
 
-function switchPage(evt, pageName) {
+function switchPage(pageName) {
     if(pageName == "index") {
         location.replace(baseURL + pageName + ".html");
     }
@@ -8,3 +8,8 @@ function switchPage(evt, pageName) {
         location.replace(baseURL + "WebsitePages/" + pageName + ".html");
     }
 }
+
+function OpenPopup() {
+    let element = document.getElementById('overlay1')
+    element.style.display = 'block'
+  }
