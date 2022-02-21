@@ -13,3 +13,8 @@ function OpenPopup() {
     let element = document.getElementById('overlay1')
     element.style.display = 'block'
   }
+
+  function ClosePopup() {
+    let element = document.getElementById('overlay1')
+    element.style.display = 'none'
+  }
