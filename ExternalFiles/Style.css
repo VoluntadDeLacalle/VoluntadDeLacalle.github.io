@@ -43,13 +43,20 @@
     top: 15;
 }
 
-.Project {
+.project {
     background:rgb(0, 195, 255);
     position: absolute;
     width: 50%;
     text-align: center;
 }
 
-.Project1 {
+.projectTable {
+    margin-left:auto;
+    margin-right:auto;
+    width: 80%;
+    height: 100%;
+}
+
+.project1 {
     border: 1px solid rgb(173, 189, 32);
 }
