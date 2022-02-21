@@ -6,6 +6,27 @@
     cursor: pointer;
 }
 
+.divTable {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 10px;
+    margin-left:auto;
+    margin-right:auto;
+    width: 80%;
+    height: 100%;
+}
+  
+.divRow { 
+    display:table-row;
+    height:150px; 
+}
+
+.divCell {
+    display:table-cell;
+    padding:5px;
+    background-color: gold;
+}
+
 .closePopup {
     background: rgb(255, 0, 0);
     width: 50px;
@@ -47,13 +68,6 @@
     background:rgb(0, 195, 255);
     position: absolute;
     text-align: center;
-}
-
-.projectTable {
-    margin-left:auto;
-    margin-right:auto;
-    width: 80%;
-    height: 100%;
 }
 
 .project1 {
