@@ -65,8 +65,8 @@
 
 .project {
     background:rgb(0, 195, 255);
-    position: absolute;
-    display: flex;
+    flex: 1;
+    align-items: center;
     text-align: center;
 }
 
