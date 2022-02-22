@@ -9,12 +9,12 @@ function switchPage(evt, pageName) {
     }
 }
 
-function OpenPopup() {
-    let element = document.getElementById('overlay1')
+function OpenPopup(overlayNumber) {
+    let element = document.getElementById('overlay' + overlayNumber)
     element.style.display = 'block'
   }
 
-  function ClosePopup() {
-    let element = document.getElementById('overlay1')
+  function ClosePopup(overlayNumber) {
+    let element = document.getElementById('overlay' + overlayNumber)
     element.style.display = 'none'
   }

@@ -6,8 +6,27 @@
     cursor: pointer;
 }
 
+.buttonPreviewPhoto {
+    background-image: url("../Images/Headshot.jpg");
+    background-size: 100% 100%;
+    width: 100%;
+    height: 180%;
+    position: relative;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.buttonPreviewText {
+    position: relative;
+    margin-left:auto;
+    margin-right:auto;
+    height: 0%;
+    bottom: -130px;
+}
+
 .divTable {
     display: table;
+    table-layout: fixed;
     border-collapse: separate;
     border-spacing: 30px;
     margin-left:auto;
@@ -18,13 +37,12 @@
   
 .divRow { 
     display:table-row;
-    height:150px; 
+    height:300px; 
 }
 
 .divCell {
     display:table-cell;
     background-color: gold;
-    height: 100;
 }
 
 .closePopup {
@@ -37,7 +55,7 @@
 }
 
 .overlay {
-    position: absolute;
+    position: fixed;
     display: none;
     top: 0;
     right: 0;
@@ -48,27 +66,32 @@
 }
 
 .popup {
-    position: absolute;
+    position: fixed;
     width: 50%;
     height: 50%;
     top: 25%;
     left: 25%;
-    text-align: center;
-    background: rgb(0, 0, 0);
+    background: rgb(255, 177, 177);
 }
 
-.previewPhoto {
-    flex: 1;
+.popupTitle {
+    text-align: center;
+}
 
-    width: 80%;
-    height: 40%;
-    background-image: url("../Images/Headshot.jpg");
-    background-size: contain;
+.popupText {
+    text-align: left;
+    padding: 10px;
+    width: 90%;
+}
+
+.previewText {
+    text-decoration: underline;
 }
 
 .project {
+    display: grid;
     background:rgb(0, 195, 255);
-    flex: 1;
+    width: 100%;
     height: 100%;
     text-align: center;
 }
