@@ -1,3 +1,11 @@
+a {
+    color:darkturquoise;
+}
+
+a:hover {
+    color:cyan;
+}
+
 .asText {
     background:none;
     border:none;
@@ -6,10 +14,16 @@
     cursor: pointer;
 }
 
+body {
+    margin: 0px;
+
+    background-image: url("../Images/Backgrounds/connectwork.png");
+    background-repeat: repeat;
+}
+
 .buttonPreviewPhoto {
-    background-image: url("../Images/Headshot.jpg");
     background-size: 100% 100%;
-    width: 100%;
+    width: 80%;
     height: 180%;
     position: relative;
     margin-left:auto;
@@ -21,14 +35,14 @@
     margin-left:auto;
     margin-right:auto;
     height: 0%;
-    bottom: -130px;
+    bottom: -120px;
 }
 
 .divTable {
     display: table;
     table-layout: fixed;
     border-collapse: separate;
-    border-spacing: 30px;
+    border-spacing: 50px;
     margin-left:auto;
     margin-right:auto;
     width: 90%;
@@ -42,16 +56,35 @@
 
 .divCell {
     display:table-cell;
-    background-color: gold;
 }
 
 .closePopup {
-    background: rgb(255, 0, 0);
-    width: 50px;
-    height: 50px;
+    background-image: url('../Images/CloseIcon.png');
+    background-size: 100% 100%;
+    
+    width: 40px;
+    height: 40px;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 15px;
+    right: 15px;
+}
+
+@font-face {
+    font-family: varelaFont;
+    src: url('../Varela-Regular.ttf');
+}
+
+h1, h2, h3, h4 {
+    font-family: varelaFont;
+}
+
+.mainTitle {
+    font-size: 84px;
+}
+
+.mainTitle, .secondaryTitle {
+    color:rgb(255, 255, 255);
+    text-align: center;
 }
 
 .overlay {
@@ -71,7 +104,7 @@
     height: 50%;
     top: 25%;
     left: 25%;
-    background: rgb(255, 177, 177);
+    background-color:rgb(37, 37, 37);
 }
 
 .popupTitle {
@@ -84,14 +117,107 @@
     width: 90%;
 }
 
+.popupText, .popupTitle {
+    font-family: varelaFamily;
+    color: rgb(230, 230, 230);
+}
+
+.previewPhoto1 {
+    background-image: url("../Images/Projects/BombVoyage/BombVoyagePreview.png");
+}
+
+.previewPhoto2 {
+    background-image: url("../Images/Projects/Rummage/RummagePreview.png");
+}
+
+.previewPhoto3 {
+    background-image: url("../Images/Projects/MoteRaycaster/MoteRaycaster.png");
+}
+
+.previewPhoto4 {
+    background-image: url("../Images/Projects/ChatApp/ChatApp.png");
+}
+
+.previewPhoto5 {
+    background-image: url("../Images/Projects/GeneticAlgorithm/GeneticAlgorithmPreview.png");
+}
+
+.previewPhoto6 {
+    background-image: url("../Images/Projects/HashMap/HashMapPreview.png");
+}
+
+.previewPhoto7 {
+    background-image: url("../Images/Projects/YokaiRush/YokaiRushPreview.png");
+}
+
+.previewPhoto8 {
+    background-image: url("../Images/Projects/Snyatcher/SnyatcherPreview.png");
+}
+
+.previewPhoto9 {
+    background-image: url("../Images/Projects/AstralAngles/AstralAnglesPreview.png");
+}
+
+.previewPhoto10 {
+    background-image: url("../Images/Projects/DontHide/DontHidePreview.png");
+}
+
 .previewText {
     text-decoration: underline;
+    color: rgb(255, 255, 255);
+
+    font-family: varelaFamily;
+    font-size: 32px;
 }
 
 .project {
     display: grid;
-    background:rgb(0, 195, 255);
     width: 100%;
     height: 100%;
     text-align: center;
+}
+
+.secondaryTitle {
+    font-size: 44px;
+}
+
+.tab {
+    position: relative;
+    width: 100%;
+    height: 150px;
+
+    background-image: url('../Images/Backgrounds/webb.png');
+    background-repeat: repeat;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.tabLink {
+    width: 30%;
+    height:40%;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: varelaFamily;
+    font-size: 30px;
+
+    border-radius: 100px;
+    background-color: rgb(240, 240, 240);
+    cursor: pointer;
+}
+
+.tabLink:hover {
+    background-color: rgb(210, 210, 210);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
 }
