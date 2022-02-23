@@ -14,8 +14,13 @@ a:hover {
 
     width: 90%;
     
-    font-family: varelaFamily;
+    font-family: varelaFont;
     font-size: 24px;
+
+    text-shadow: -2px 2px 0 #000,
+				  2px 2px 0 #000,
+				 2px -2px 0 #000,
+				-2px -2px 0 #000;
 }
 
 .asText {
@@ -37,12 +42,15 @@ body {
     background-size: 100% 100%;
     width: 80%;
     height: 180%;
+
     position: relative;
     margin-left:auto;
     margin-right:auto;
     border-radius: 10px;
 
     border: 1px solid rgba(0, 0, 0, 1);
+
+    transition: 0.2s;
 }
 
 .buttonPreviewPhoto:hover {
@@ -53,8 +61,11 @@ body {
     position: relative;
     margin-left:auto;
     margin-right:auto;
+
     height: 0%;
     bottom: -120px;
+
+    transition: 0.2s;
 }
 
 .buttonPreviewText:hover {
@@ -106,6 +117,14 @@ body {
     src: url('../Varela-Regular.ttf');
 }
 
+.footer {
+    font-family: varelaFont;
+    font-size: 14px;
+
+    color:rgb(230, 230, 230);
+    text-align: center;
+}
+
 h1, h2, h3, h4 {
     font-family: varelaFont;
 }
@@ -126,7 +145,7 @@ h1, h2, h3, h4 {
 }
 
 .mainTitle, .secondaryTitle {
-    color:rgb(89,112,129);
+    color:rgb(114,143,164);
     text-align: center;
 
     text-shadow: -2px 2px 0 #000,
@@ -136,14 +155,14 @@ h1, h2, h3, h4 {
 }
 
 .missionStatement {
-    color: rgb(230, 230, 230);
+    color: rgb(172, 220, 255);
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 
     width: 75%;
     
-    font-family: varelaFamily;
+    font-family: varelaFont;
     font-size: 30px;
     font-style: italic;
 
@@ -160,8 +179,11 @@ h1, h2, h3, h4 {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(218, 218, 218, 0.8);
+    background: rgba(150, 150, 150, 0.8);
     z-index: 2;
+
+    -webkit-animation: fadeIn 0.5s;
+    animation: fadeIn 0.5s;
 }
 
 .parallax {
@@ -176,6 +198,9 @@ h1, h2, h3, h4 {
     top: 25%;
     left: 25%;
     background-color:rgb(37, 37, 37);
+
+    -webkit-animation: fadeIn .75s;
+    animation: fadeIn .75s;
 }
 
 .popupTitle {
@@ -235,10 +260,11 @@ h1, h2, h3, h4 {
 
 .previewText {
     text-decoration: underline;
+    text-underline-offset: 2px;
     color: rgb(220, 220, 220);
 
-    font-family: varelaFamily;
-    font-size: 32px;
+    font-family: varelaFont;
+    font-size: 24px;
 }
 
 .project {
@@ -255,27 +281,52 @@ h1, h2, h3, h4 {
 .tab {
     position: relative;
     width: 100%;
-    height: 150px;
+    height: 100px;
 
     background-image: url('../Images/Backgrounds/webb.png');
     background-repeat: repeat;
-
 }
 
 .tabLink {
-    width: 30%;
-    height:40%;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    transition: 0.3s;
 
-    font-family: varelaFamily;
-    font-size: 30px;
+    width: 33.33%;
+    height: 100%;
 
-    border: 1px solid black;
-    border-radius: 100px;
+    font-family: varelaFont;
+    font-size: 45px;
+
     cursor: pointer;
 }
 
 .tabLink:hover {
-    background-color: rgb(210, 210, 210);
+    background-color: rgba(0, 0, 0, .75);
+    color:rgb(230, 230, 230);
+
+    font-size: 50px;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+  
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+@-webkit-keyframes fadeOut {
+    from {opacity: 1;} 
+    to {opacity: 0;}
+}
+  
+@keyframes fadeOut {
+    from {opacity: 1;} 
+    to {opacity: 0;}
 }

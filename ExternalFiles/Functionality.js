@@ -12,9 +12,9 @@ function switchPage(evt, pageName) {
 function OpenPopup(overlayNumber) {
     let element = document.getElementById('overlay' + overlayNumber)
     element.style.display = 'block'
-  }
+}
 
-  function ClosePopup(overlayNumber) {
+function ClosePopup(overlayNumber) {
     let element = document.getElementById('overlay' + overlayNumber)
     element.style.display = 'none'
-  }
+}
