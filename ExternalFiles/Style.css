@@ -81,6 +81,22 @@ body {
     height: 100%;
 }
 
+.contactInfo {
+    font-family: varelaFont;
+    font-size: 45px;
+
+    color:rgb(230, 230, 230);
+    text-align: center;
+}
+
+.contactLink {
+    color: rgb(62, 151, 211);
+}
+
+.contactLink:hover {
+    color: rgb(51, 120, 167);
+}
+
 .divTable {
     display: table;
     table-layout: fixed;
@@ -385,8 +401,4 @@ h1, h2, h3, h4 {
 @keyframes fadeOut {
     from {opacity: 1;} 
     to {opacity: 0;}
-}
-
-.test {
-    background-color: aqua;
 }
