@@ -83,7 +83,7 @@ body {
 
 .contactInfo {
     font-family: varelaFont;
-    font-size: 45px;
+    font-size: 35px;
 
     color:rgb(230, 230, 230);
     text-align: center;
@@ -104,8 +104,13 @@ body {
     border-spacing: 50px;
     margin-left:auto;
     margin-right:auto;
-    width: 90%;
+    width: 80%;
     height: 100%;
+}
+
+.skillDivTable {
+    width: 85%;
+    border-spacing: 70px;
 }
   
 .divRow { 
@@ -115,6 +120,8 @@ body {
 
 .divCell {
     display:table-cell;
+    width:  250px;
+    height: 100px;
 }
 
 .closePopup {
@@ -157,7 +164,7 @@ h1, h2, h3, h4 {
 }
 
 .mainTitle {
-    font-size: 84px;
+    font-size: 70px;
 }
 
 .mainTitle, .secondaryTitle {
@@ -321,8 +328,8 @@ h1, h2, h3, h4 {
 .skillIcon {
     position: absolute;
     width: 20%;
-    top:50px;
-    right:0px;
+    top: 100px;
+    right: -10px;
 
     padding: 5px;
 
@@ -332,12 +339,12 @@ h1, h2, h3, h4 {
 .skillTitle {
     position: absolute;
     left: 15px;
-    top: 25px;
+    top: 60px;
 
     color: rgb(220, 220, 220);
 
     font-family: varelaFont;
-    font-size: 35px;
+    font-size: 22px;
 
 
     text-shadow: -2px 2px 0 #000,
@@ -347,7 +354,7 @@ h1, h2, h3, h4 {
 }
 
 .longSkillTitle {
-    top: -25px;
+    top: 32px;
 }
 
 .tab {
@@ -367,11 +374,11 @@ h1, h2, h3, h4 {
     padding: 14px 16px;
     transition: 0.3s;
 
-    width: 33.33%;
+    width: 25%;
     height: 100%;
 
     font-family: varelaFont;
-    font-size: 45px;
+    font-size: 38px;
 
     cursor: pointer;
 }
@@ -380,7 +387,7 @@ h1, h2, h3, h4 {
     background-color: rgba(0, 0, 0, .75);
     color:rgb(230, 230, 230);
 
-    font-size: 50px;
+    font-size: 40px;
 }
 
 @-webkit-keyframes fadeIn {
