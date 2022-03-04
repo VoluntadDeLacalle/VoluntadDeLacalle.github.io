@@ -27,3 +27,10 @@ function ClosePopup(overlayNumber) {
 
     window.onscroll = function() {};
 }
+
+/*const DontHideGallery = new Viewer(document.getElementById('dontHideViewerImages'), {
+    inline: true,
+    viewed() {
+      viewer.zoomTo(1);
+    },
+  });*/
