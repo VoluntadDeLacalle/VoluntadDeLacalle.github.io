@@ -161,6 +161,22 @@ body {
     right: 15px;
 }
 
+.contactIcons {
+    position: relative;
+    top: 25%;
+
+    width: 75px;
+    height: 50px;
+
+    filter: brightness(0) invert(1) contrast(1);
+
+    transition: 0.2s;
+}
+
+.contactIcons:hover {
+    filter: brightness(0) invert(1) contrast(.5);
+}
+
 @font-face {
     font-family: varelaFont;
     src: url('../Varela-Regular.ttf');
@@ -382,6 +398,19 @@ h1, h2, h3, h4 {
     width: 100%;
     height: 4px;
     top: 65px;
+}
+
+.socialDiv {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 160px;
+    height: 75px;
+}
+
+.socialIcons:hover {
+    color: red;
 }
 
 .tab {
