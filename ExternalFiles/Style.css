@@ -278,10 +278,12 @@ h1, h2, h3, h4 {
 .popup {
     position: fixed;
     width: 50%;
-    height: 50%;
-    top: 25%;
+    height: 60%;
+    top: 20%;
     left: 25%;
     background-color:rgb(37, 37, 37);
+
+    overflow-y: auto;
 
     -webkit-animation: fadeIn .75s;
     animation: fadeIn .75s;
@@ -300,6 +302,12 @@ h1, h2, h3, h4 {
 .popupText, .popupTitle {
     font-family: varelaFont;
     color: rgb(230, 230, 230);
+}
+
+.popupViewerImages {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 12px;
 }
 
 .previewPhoto1 {
@@ -444,6 +452,18 @@ h1, h2, h3, h4 {
     color:rgb(230, 230, 230);
 
     font-size: 32px;
+}
+
+.viewerImages {
+    height: 100px;
+    cursor: pointer;
+
+    border: 3px solid rgba(0,0,0,0);
+    transition: 0.2s;
+}
+
+.viewerImages:hover {
+    border: 3px solid white;
 }
 
 @-webkit-keyframes fadeIn {

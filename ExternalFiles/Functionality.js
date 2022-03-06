@@ -13,6 +13,8 @@ function OpenPopup(overlayNumber) {
     let element = document.getElementById('overlay' + overlayNumber)
     element.style.display = 'block'
 
+    const gallery = new Viewer(document.getElementById('viewerImages' + overlayNumber));
+
     TopScroll = window.pageYOffset || document.documentElement.scrollTop;
     LeftScroll = window.pageXOffset || document.documentElement.scrollLeft,
 
@@ -27,10 +29,3 @@ function ClosePopup(overlayNumber) {
 
     window.onscroll = function() {};
 }
-
-/*const DontHideGallery = new Viewer(document.getElementById('dontHideViewerImages'), {
-    inline: true,
-    viewed() {
-      viewer.zoomTo(1);
-    },
-  });*/
