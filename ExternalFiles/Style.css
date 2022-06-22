@@ -86,7 +86,7 @@ body {
 }
 
 .buttonPreviewText:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(220, 220, 220);
 }
 
 .center {
@@ -112,6 +112,18 @@ body {
 
 .contactLink:hover {
     color: rgb(51, 120, 167);
+}
+
+.contactLinkResume {
+    color: rgb(255, 255, 255);
+}
+
+.contactLinkResume:link {
+    text-decoration: none;
+}
+
+.contactLinkResume:hover {
+    color: rgb(220, 220, 220);
 }
 
 .divTable {
@@ -353,7 +365,7 @@ h1, h2, h3, h4 {
 .previewText {
     text-decoration: underline;
     text-underline-offset: 2px;
-    color: rgb(220, 220, 220);
+    color: rgb(255, 255, 255);
 
     font-family: varelaFont;
     font-size: 24px;
@@ -413,7 +425,7 @@ h1, h2, h3, h4 {
     margin-left: auto;
     margin-right: auto;
 
-    width: 160px;
+    width: 250px;
     height: 75px;
 }
 
