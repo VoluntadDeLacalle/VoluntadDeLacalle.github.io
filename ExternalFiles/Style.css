@@ -118,10 +118,6 @@ body {
     color: rgb(255, 255, 255);
 }
 
-.contactLinkResume:link {
-    text-decoration: none;
-}
-
 .contactLinkResume:hover {
     color: rgb(220, 220, 220);
 }
