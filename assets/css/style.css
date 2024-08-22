@@ -76,6 +76,8 @@ h6 {
   transition: all 0.4s;
   font-size: 25px;
   color: #fff;
+  padding: 12px 25px;
+  border:rgba(0, 0, 0, 0)
 }
 
 /* .custom-button p {
