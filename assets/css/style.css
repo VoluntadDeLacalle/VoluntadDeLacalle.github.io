@@ -67,6 +67,28 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Custom Button
+--------------------------------------------------------------*/
+.custom-button {
+  z-index: 996;
+  background: #0563bb;
+  border-radius: 50px;
+  transition: all 0.4s;
+  font-size: 25px;
+  color: #fff;
+}
+
+/* .custom-button p {
+  font-size: 25px;
+  color: #fff;
+} */
+
+.custom-button:hover {
+  background: #0678e3;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
 #preloader {
@@ -1126,7 +1148,7 @@ section {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button {
   background: #0563bb;
   border: 0;
   padding: 10px 35px;
@@ -1135,7 +1157,7 @@ section {
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button:hover {
   background: #0678e3;
 }
 
